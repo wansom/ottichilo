@@ -54,8 +54,7 @@ h2 {
 h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: 'poppins';
+  font-family: 'rubik';
   letter-spacing: -.5px;
 }
 
@@ -1543,7 +1542,8 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   padding: 25px 0;
   line-height: normal;
   font-size: 24px;
-  text-transform: capitalize;
+  font-family: "rubik";
+  text-transform: none;
 }
 
 /* Action style box */
@@ -1561,7 +1561,11 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   margin: 0;
   line-height: 36px;
   font-size: 18px;
-  text-transform: uppercase;
+  text-transform: none;
+  font-family: "rubik";
+}
+.action-paragraph{
+  font-family: "poppins";
 }
 
 /* Intro
