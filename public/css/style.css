@@ -1303,7 +1303,9 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   font-style: "poppins";
   font-size: 60px;
   line-height: 58px;
-  margin: 20px 0;
+  margin-top: 80px;
+ 
+
   color: #fff;
   font-weight: 900;
   text-transform: uppercase;
@@ -2696,7 +2698,7 @@ img.testimonial-thumb {
   position: absolute;
   top: 90%;
   left: 0;
-  right: 0;
+  right: 0 ;
   max-width: 1170px;
   margin: 0 auto;
   width: 100%;
