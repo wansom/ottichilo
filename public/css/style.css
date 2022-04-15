@@ -7,8 +7,10 @@ Description: Constra - Construction Html5 Template
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800&display=swap);
 /* Typography
+
 ================================================== */
 body {
   background: #fff;
@@ -17,7 +19,7 @@ body {
 
 body,
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family:  "rubik";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased !important;
   line-height: 26px;
@@ -32,7 +34,7 @@ h5,
 h6 {
   color: #212121;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'rubik';
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased !important;
 }
@@ -1566,7 +1568,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 .into-title {
   font-weight: 300;
-  text-transform: uppercase;
+ 
   font-size: 18px;
   line-height: normal;
   margin: 0;
@@ -1574,10 +1576,10 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 .into-sub-title {
   font-weight: 900;
-  text-transform: uppercase;
   font-size: 32px;
   line-height: normal;
   margin: 10px 0;
+  text-transform: none;	
 }
 
 /*-- Featured Tab --*/
