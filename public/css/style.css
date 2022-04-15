@@ -2511,7 +2511,7 @@ img.testimonial-thumb {
   padding-left: 15px;
   text-transform: uppercase;
   color: #fff;
-  border-left: 3px solid #ffb600;
+  border-left: 3px solid #FF8100;
 }
 
 /* Footer about us */
@@ -2569,7 +2569,7 @@ img.testimonial-thumb {
 
 .footer-widget ul.list-arrow li:hover a,
 .footer-widget ul.list-arrow li:hover {
-  color: #ffb600;
+  color: #FF8100;
 }
 
 .working-hours {
@@ -2635,7 +2635,7 @@ img.testimonial-thumb {
   line-height: 36px;
   background: rgba(0, 0, 0, 0.9);
   border-radius: 3px;
-  color: #ffb600;
+  color: #FF8100;
   font-weight: 700;
   font-size: 16px;
   padding: 0;
