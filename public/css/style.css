@@ -55,6 +55,7 @@ h3 {
   font-size: 24px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-family: 'poppins';
   letter-spacing: -.5px;
 }
 
@@ -1280,8 +1281,10 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   font-size: 30px;
   line-height: 36px;
   font-weight: 300;
+  font-family: "rubik";
   color: #fff;
   margin: 20px 0 10px;
+  text-transform: none;
 }
 
 @media (max-width: 991px) {
@@ -1297,7 +1300,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 .slide-sub-title {
-  font-style: normal;
+  font-style: "poppins";
   font-size: 60px;
   line-height: 58px;
   margin: 20px 0;
@@ -2463,22 +2466,31 @@ img.testimonial-thumb {
 }
 
 .latest-post .post-title a {
-  color: #303030;
+  color: #fff;
+  font-size: 20px;
+  font-family: "poppins";
 }
 
 .latest-post .post-title a:hover {
-  color: #ffb600;
+  color: #0041D3;
 }
 
 .latest-post-meta {
   font-size: 13px;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .latest-post .post-body {
-  padding: 20px 0 5px;
+  padding: 20px 5px 5px;
+  background-color: #FF8100;
+  height: 230px;
 }
-
+.latest-post .post-body  {
+  padding: 20px 5px 5px;
+  background-color: #FF8100;
+  height: 230px;
+}
 /* Footer
 ================================================== */
 /*- Footer common */
