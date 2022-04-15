@@ -2286,7 +2286,7 @@ img.testimonial-thumb {
   margin: 0 0 2px;
   font-weight: 700;
   display: block;
-  color: #ffb600;
+  color: #FF8100;
 }
 
 .quote-item-footer {
@@ -2302,7 +2302,7 @@ img.testimonial-thumb {
 
 /* Testimonial Border */
 .quote-item.quote-border .quote-text-border {
-  border: 1px solid #ffb600;
+  border: 1px solid #FF8100;
   padding: 20px;
   position: relative;
   line-height: 28px;
@@ -2358,7 +2358,7 @@ img.testimonial-thumb {
 /* Subscribe area
 ================================================== */
 .subscribe {
-  background: #ffb600;
+  background: #FF8100;
   padding: 0;
 }
 
@@ -2740,6 +2740,7 @@ img.testimonial-thumb {
   padding: 0;
   outline: 0;
   border: 0;
+  
 }
 
 .page-slider .carousel-control.left {
@@ -2769,10 +2770,13 @@ img.testimonial-thumb {
 .page-slider.small-bg .item {
   min-height: 530px;
   background-size: cover;
+  width: 100%;
+  
 }
 
 .page-slider.small-bg .box-slider-content {
   left: 20%;
+ 
 }
 
 .page-slider.small-bg .box-slider-text {
