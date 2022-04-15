@@ -2664,9 +2664,9 @@ img.testimonial-thumb {
 /*-- Banner --*/
 .banner-area {
   position: relative;
-  min-height: 300px;
+  min-height: 400px;
   color: #fff;
-  background-position: 50% 50%;
+  
   background-size: cover;
 }
 
@@ -2675,6 +2675,9 @@ img.testimonial-thumb {
   text-transform: uppercase;
   font-size: 58px;
   font-weight: 900;
+  font-family: "poppins";
+ 
+
 }
 
 @media (max-width: 767px) {
@@ -2691,7 +2694,7 @@ img.testimonial-thumb {
 
 .banner-text {
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 0;
   right: 0;
   max-width: 1170px;
@@ -2703,7 +2706,7 @@ img.testimonial-thumb {
 }
 
 .banner-heading {
-  text-align: center;
+  text-align: start;
 }
 
 .breadcrumb {
