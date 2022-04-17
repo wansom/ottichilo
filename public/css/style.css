@@ -1299,7 +1299,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 .slide-sub-title {
-  font-style: "poppins";
+  font-family: "poppins";
   font-size: 60px;
   line-height: 58px;
   margin-top: 80px;
