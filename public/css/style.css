@@ -2777,7 +2777,7 @@ img.testimonial-thumb {
 }
 
 .page-slider.small-bg .item {
-  min-height: 530px;
+  min-height: 680px;
   background-size: cover;
   width: 100%;
   
@@ -2797,6 +2797,7 @@ img.testimonial-thumb {
   font-size: 28px;
   color: #fff;
   font-weight: 900;
+  font-family: "poppins";
 }
 
 /*-- Get a quote page --*/
