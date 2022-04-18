@@ -1,0 +1,23 @@
+{
+  "name": "constra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://wansom: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@github.com/wansom/ottichilo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wansom/ottichilo/issues"
+  },
+  "homepage": "https://github.com/wansom/ottichilo#readme",
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.75"
+  }
+}
