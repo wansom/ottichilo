@@ -2473,7 +2473,12 @@ img.testimonial-thumb {
 }
 
 .latest-post .post-title a {
-  color: #fff;
+  color: black;
+  font-size: 20px;
+  font-family: "poppins";
+}
+.latest-post .post-sub-title p {
+  color: black;
   font-size: 20px;
   font-family: "poppins";
 }
@@ -2484,19 +2489,15 @@ img.testimonial-thumb {
 
 .latest-post-meta {
   font-size: 13px;
-  text-transform: uppercase;
-  color: #fff;
+  text-transform: none;
+  font-family: "rubik";
+  color: black;
 }
 
-.latest-post .post-body {
-  padding: 20px 5px 5px;
-  background-color: #FF8100;
-  height: 230px;
-}
 .latest-post .post-body  {
   padding: 20px 5px 5px;
-  background-color: #FF8100;
-  height: 230px;
+  background-image: linear-gradient( #fff,#FF8100);
+  height: 280px;
 }
 /* Footer
 ================================================== */
