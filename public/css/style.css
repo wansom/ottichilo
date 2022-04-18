@@ -1553,11 +1553,12 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 .call-to-action-box .action-style-box {
   background: #FF8100;
+  background-image: linear-gradient( #FF8100,#fff);
   padding: 30px;
 }
 
 .action-title {
-  color: #fff;
+  color: black;
   margin: 0;
   line-height: 36px;
   font-size: 18px;
