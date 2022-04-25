@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CrmService } from '../services/crm.service';
-import { Entry } from 'contentful';
+
 
 @Component({
   selector: 'app-blog',
@@ -14,13 +14,19 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.getPosts().then((posts:any)=>{
-      posts.forEach((element:any) => {
-       
-        this.posts.push(element.fields)
+      console.log(posts)
+      this.posts = posts
 
-      });
-      console.log(this.posts)
     })
   }
 
 }
+// .then((entry) => {
+//   let cars = entry.items.map((item) => {
+//     const { name, price, seats, doors } = item.fields;
+//     const { id } = item.sys;
+//     const image = item.fields.image.fields.file.url;
+//     return { name, price, id, image, seats, doors };
+//   });
+//   commit('setCars', cars)
+// });

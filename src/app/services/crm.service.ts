@@ -16,11 +16,20 @@ export class CrmService {
   constructor() { 
  
   }
-  getPosts(query?: object): Promise<Entry<any>[]> {
-    return this.client.getEntries(Object.assign({
-      content_type: environment.contentful.contentTypeIds.blogpost
-    }, query))
-    .then(res => res.items);
+  getPosts(){
+    return this.client.getEntries({
+      content_type: environment.contentful.contentTypeIds.blogpost,
+    })
+    .then((entry) => {
+      let posts = entry.items.map((item:any) => {
+        const { title, date,description,  }:any = item.fields;
+        const { id } = item.sys;
+        const image:any = item.fields.image.fields.file.url;
+        return { title,date, description, id, image };
+      });
+     return posts
+    });
   }
 
 }
+
