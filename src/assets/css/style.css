@@ -1281,7 +1281,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   line-height: 36px;
   font-weight: 300;
   font-family: "rubik";
-  color: #fff;
+  color: black;
   margin-top: 0;
   text-transform: none;
 }
@@ -1307,7 +1307,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   
  
 
-  color: #fff;
+  color: black;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -1px;
