@@ -8,15 +8,18 @@ import { Entry } from 'contentful';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
-  private posts: Entry<any>[] = [];
+  public posts: any[] = [];
 
   constructor(private service:CrmService) { }
 
   ngOnInit(): void {
     this.service.getPosts().then((posts:any)=>{
       posts.forEach((element:any) => {
-        console.log(element.fields)
+       
+        this.posts.push(element.fields)
+
       });
+      console.log(this.posts)
     })
   }
 

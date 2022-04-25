@@ -18,7 +18,7 @@ export class CrmService {
   }
   getPosts(query?: object): Promise<Entry<any>[]> {
     return this.client.getEntries(Object.assign({
-      content_type: environment.contentful.contentTypeIds.product
+      content_type: environment.contentful.contentTypeIds.blogpost
     }, query))
     .then(res => res.items);
   }
