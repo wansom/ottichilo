@@ -6,404 +6,49 @@
             <div class="col-12">
               <div class="shuffle-btn-group">
                 <label class="active" for="all">
-                  <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Show All
+                  <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked" (click)="filterImages($event.target)">Show All
                 </label>
                 <label for="agriculture">
-                  <input type="radio" name="shuffle-filter" id="agriculture" value="agriculture">AGRICULTURE
+                  <input type="radio" name="shuffle-filter" id="agriculture" value="agriculture" (click)="filterImages($event.target)">AGRICULTURE
                 </label>
                 <label for="education">
-                  <input type="radio" name="shuffle-filter" id="education" value="education">EDUCATION
+                  <input type="radio" name="shuffle-filter" id="education" value="education"(click)="filterImages($event.target)"> EDUCATION
                 </label>
                 <label for="environment">
-                  <input type="radio" name="shuffle-filter" id="environment" value="environment">ENVIRONMENT &AMP;cLIMATE CHANGE             </label>
-                <label for="infrastructure">
-                  <input type="radio" name="shuffle-filter" id="infrastructure" value="infrastructure">TRANSPORT  &AMP; INFRASTRUCTURE
+                  <input type="radio" name="shuffle-filter" id="environment" value="environment" (click)="filterImages($event.target)">ENVIRONMENT &AMP;cLIMATE CHANGE             </label>
+                <label for="transport">
+                  <input type="radio" name="shuffle-filter" id="transport" value="transport" (click)="filterImages($event.target)">TRANSPORT  &AMP; INFRASTRUCTURE
                 </label>
                 <label for="trade">
-                  <input type="radio" name="shuffle-filter" id="trade" value="trade">TRADE &amp;ENTREPRENEURSHIP
+                  <input type="radio" name="shuffle-filter" id="trade" value="trade" (click)="filterImages($event.target)">TRADE &amp;ENTREPRENEURSHIP
                 </label>
                 <label for="healthcare">
-                  <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">HEALTHCARE
+                  <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare" (click)="filterImages($event.target)">HEALTHCARE
+                </label>
+                <label for="water">
+                  <input type="radio" name="shuffle-filter" id="water" value="water" (click)="filterImages($event.target)">WATER
                 </label>
               </div><!-- project filter end -->
       
       
-              <div class="row shuffle-wrapper">
-                <div class="col-1 shuffle-sizer"></div>
-      
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;agriculture&quot;]">
+              <div class="row ">
+                <div class="col-lg-4 col-md-6 shuffle-item" *ngFor="let em of healthcare">
                   <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/agriculture/a1.jpg">
-                      <img class="img-fluid" src="assets/images/report/agriculture/a1.jpg" alt="agriculture" style="height: 300px; width: 100%;">
+                    <a class="gallery-popup" href="{{em.image}}">
+                      <img class="img-fluid" src="{{em.image}}" alt="agriculture" style="height: 300px; width: 100%;">
                       <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                     </a>
                     <div class="project-item-info">
                       <div class="project-item-info-content">
                         <h3 class="project-item-title">
-                          <a href="#">AGRICULTURE</a>
+                          <a href="#">{{em.title}}</a>
                         </h3>
-                        <p class="project-cat">agriculture</p>
+                        <p class="project-cat">{{em.description}}</p>
                       </div>
                     </div>
                   </div>
-                </div><!-- shuffle item 1 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;agriculture&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/agriculture/a2.JPG">
-                      <img class="img-fluid" src="assets/images/report/agriculture/a2.JPG" alt="agriculture" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">AGRICULTURE</a>
-                        </h3>
-                        <p class="project-cat">agriculture</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 1 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;agriculture&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/agriculture/a3.png">
-                      <img class="img-fluid" src="assets/images/report/agriculture/a3.png" alt="agriculture" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">AGRICULTURE</a>
-                        </h3>
-                        <p class="project-cat">agriculture</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 1 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;agriculture&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/agriculture/a4.JPG">
-                      <img class="img-fluid" src="assets/images/report/agriculture/a4.JPG" alt="agriculture" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">AGRICULTURE</a>
-                        </h3>
-                        <p class="project-cat">agriculture</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 1 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;agriculture&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/agriculture/a5.JPG">
-                      <img class="img-fluid" src="assets/images/report/agriculture/a5.JPG" alt="agriculture" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">AGRICULTURE</a>
-                        </h3>
-                        <p class="project-cat">agriculture</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 1 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;agriculture&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/agriculture/a6.jpg">
-                      <img class="img-fluid" src="assets/images/report/agriculture/a6.jpg" alt="agriculture" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">AGRICULTURE</a>
-                        </h3>
-                        <p class="project-cat">agriculture</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 1 end -->
-      
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/education/e1.JPG">
-                      <img class="img-fluid" src="assets/images/report/education/e1.JPG" alt="Education" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="projects-single.html">Education</a>
-                        </h3>
-                        <p class="project-cat">Education</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 2 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/education/e2.JPG">
-                      <img class="img-fluid" src="assets/images/report/education/e2.JPG" alt="Education" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="projects-single.html">Education</a>
-                        </h3>
-                        <p class="project-cat">Education</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 2 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/education/e3.JPG">
-                      <img class="img-fluid" src="assets/images/report/education/e3.JPG" alt="Education" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="projects-single.html">Education</a>
-                        </h3>
-                        <p class="project-cat">Education</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 2 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/education/e4.JPG">
-                      <img class="img-fluid" src="assets/images/report/education/e4.JPG" alt="Education" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="projects-single.html">Education</a>
-                        </h3>
-                        <p class="project-cat">Education</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 2 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/education/e5.JPG">
-                      <img class="img-fluid" src="assets/images/report/education/e5.JPG" alt="Education" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="projects-single.html">Education</a>
-                        </h3>
-                        <p class="project-cat">Education</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 2 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/education/e8.JPG">
-                      <img class="img-fluid" src="assets/images/report/education/e8.JPG" alt="Education" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="projects-single.html">Education</a>
-                        </h3>
-                        <p class="project-cat">Education</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 2 end -->
-                
-      
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;environment&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/environment/en1.JPG">
-                      <img class="img-fluid" src="assets/images/report/environment/en1.JPG" alt="environment" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">environment</a>
-                        </h3>
-                        <p class="project-cat">ENVIRONMENT</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 4 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;environment&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/environment/en2.JPG">
-                      <img class="img-fluid" src="assets/images/report/environment/en1.JPG" alt="environment" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">environment</a>
-                        </h3>
-                        <p class="project-cat">ENVIRONMENT</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 4 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;environment&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/environment/en3.JPG">
-                      <img class="img-fluid" src="assets/images/report/environment/en3.JPG" alt="environment" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">environment</a>
-                        </h3>
-                        <p class="project-cat">ENVIRONMENT</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 4 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;environment&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/environment/en4.JPG">
-                      <img class="img-fluid" src="assets/images/report/environment/en4.JPG" alt="environment" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">environment</a>
-                        </h3>
-                        <p class="project-cat">ENVIRONMENT</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 4 end -->
-      
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/transport/t1.JPG">
-                      <img class="img-fluid" src="assets/images/report/transport/t1.JPG" alt="project-image" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="projects-single.html">Kalas Metrorail</a>
-                        </h3>
-                        <p class="project-cat">Infrastructure</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 5 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/transport/t2.JPG">
-                      <img class="img-fluid" src="assets/images/report/transport/t2.JPG" alt="project-image" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="projects-single.html">Roads</a>
-                        </h3>
-                        <p class="project-cat">Infrastructure</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 5 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/transport/t3.JPG">
-                      <img class="img-fluid" src="assets/images/report/transport/t3.JPG" alt="project-image" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="projects-single.html">Roads</a>
-                        </h3>
-                        <p class="project-cat">Infrastructure</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 5 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/transport/t4.JPG">
-                      <img class="img-fluid" src="assets/images/report/transport/t4.JPG" alt="project-image" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="projects-single.html">Roads</a>
-                        </h3>
-                        <p class="project-cat">Infrastructure</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 5 end -->
-      
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;trade&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/trade/tr1.JPG">
-                      <img class="img-fluid" src="assets/images/report/trade/tr1.JPG" alt="trade" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">Trade</a>
-                        </h3>
-                        <p class="project-cat">Trade</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 6 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;trade&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/trade/tr2.JPG">
-                      <img class="img-fluid" src="assets/images/report/trade/tr2.JPG" alt="trade" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">Trade</a>
-                        </h3>
-                        <p class="project-cat">Trade</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 6 end -->
-                <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;trade&quot;]">
-                  <div class="project-img-container">
-                    <a class="gallery-popup" href="assets/images/report/trade/tr3.JPG">
-                      <img class="img-fluid" src="assets/images/report/trade/tr3.JPG" alt="trade" style="height: 300px; width: 100%;">
-                      <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                    </a>
-                    <div class="project-item-info">
-                      <div class="project-item-info-content">
-                        <h3 class="project-item-title">
-                          <a href="#">Trade</a>
-                        </h3>
-                        <p class="project-cat">Trade</p>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- shuffle item 6 end -->
+                </div><!-- shuffle item 1 end -->   
+
               </div><!-- shuffle end -->
             </div>
       

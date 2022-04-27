@@ -30,6 +30,20 @@ export class CrmService {
      return posts
     });
   }
+  getImages(){
+    return this.client.getEntries({
+      content_type: "gallery",
+    })
+    .then((entry) => {
+      let posts = entry.items.map((item:any) => {
+        const { title,description,category  }:any = item.fields;
+        const { id } = item.sys;
+        const image:any = item.fields.image.fields.file.url;
+        return { title, description, category,id, image };
+      });
+     return posts
+    });
+  }
 
 }
 
