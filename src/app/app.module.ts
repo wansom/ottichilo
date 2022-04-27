@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BlogComponent } from './blog/blog.component';
 import { CrmService } from './services/crm.service';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CrmService } from './services/crm.service';
     NavbarComponent,
     FooterComponent,
     GalleryComponent,
-    BlogComponent
+    BlogComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

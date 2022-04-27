@@ -721,7 +721,7 @@ ul.top-info li p.info-text {
 }
 
 ul.navbar-nav > li > a {
-  padding: 15px 0 !important;
+  padding: 5px 0 !important;
   color: #fff;
 }
 
@@ -1242,7 +1242,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 ================================================== */
 /*-- Main slide --*/
 .banner-carousel .banner-carousel-item {
-  height: 700px;
+  height: 620px;
   color: #fff;
   
   background-size: cover;
@@ -2673,7 +2673,7 @@ img.testimonial-thumb {
 /*-- Banner --*/
 .banner-area {
   position: relative;
-  min-height: 400px;
+  min-height: 580px;
   color: #fff;
   
   background-size: cover;
