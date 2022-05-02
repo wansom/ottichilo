@@ -13,6 +13,9 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { BlogComponent } from './blog/blog.component';
 import { CrmService } from './services/crm.service';
 import { BannerComponent } from './banner/banner.component';
+import { GoogleMapsModule } from '@angular/google-maps'
+
+
 
 @NgModule({
   declarations: [
@@ -25,13 +28,10 @@ import { BannerComponent } from './banner/banner.component';
     FooterComponent,
     GalleryComponent,
     BlogComponent,
-    BannerComponent
+    BannerComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule],
   providers: [CrmService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

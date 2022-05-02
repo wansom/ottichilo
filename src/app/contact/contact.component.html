@@ -54,9 +54,13 @@
     </div><!-- 1st row end -->
 
     <div class="gap-60"></div>
-
+ 
     <div class="google-map">
-      <div id="map" class="map" data-latitude="0.0768" data-longitude="34.7078" data-marker="assets/images/marker.png" data-marker-name="office"></div>
+      <google-map 
+      width="100%"
+       [options]="mapOptions">
+      </google-map>
+
     </div>
 
     <div class="gap-40"></div>
