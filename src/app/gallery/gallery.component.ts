@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CrmService } from '../services/crm.service';
 
+
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
