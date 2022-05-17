@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomService } from './services/dom.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ottichilo';
+  constructor(private rightClickDisable: DomService) {}
+  ngOnInit() {
+    this.rightClickDisable.disableRightClick();
+  }
 }
