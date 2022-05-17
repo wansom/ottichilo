@@ -14,7 +14,6 @@ const routes: Routes = [
   {path:'gallery',component:GalleryComponent},
   {path:'blog',component:BlogComponent}
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
