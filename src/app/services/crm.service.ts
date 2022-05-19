@@ -39,6 +39,7 @@ export class CrmService {
     })
     .then((entry) => {
       let posts = entry.items.map((item:any) => {
+        console.log(item)
         const { title,description,category,date  }:any = item.fields;
         const { id } = item.sys;
         const image:any = item.fields.image.fields.file.url;
