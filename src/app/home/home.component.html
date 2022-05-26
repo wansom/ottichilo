@@ -278,30 +278,46 @@
               </div>
             </div>
             <!-- Col end -->
-
+            <div class="wrapper">
+              
+              <div class="description">
+               
+              </div>
+              <div class="times">
+              
+              </div>
+            </div>
             <div class="col-md-8">
               <div class="ts-newsletter row align-items-center">
                 <div class="col-md-5 newsletter-introtext">
-                  <h4 class="text-white mb-0">Newsletter Sign-up</h4>
-                  <p class="text-white">Latest updates and news</p>
+                  <p class="text-white align-items-center">
+                    Countdown to {{ months[month] + ' ' + day + ', ' + year }}
+                  </p>
+                  
                 </div>
 
-                <div class="col-md-7 newsletter-form">
-                  <form action="#" method="post">
-                    <div class="form-group">
-                      <label for="newsletter-email" class="content-hidden"
-                        >Newsletter Email</label
-                      >
-                      <input
-                        type="email"
-                        name="email"
-                        id="newsletter-email"
-                        class="form-control form-control-lg"
-                        placeholder="Your your email and hit enter"
-                        autocomplete="off"
-                      />
+                <div class="col-md-7 newsletter-form text-white">
+                  <div class="row">
+                    <div class="col-3 ">
+                      <p>Days</p>
+                      <p id="days"></p>
+                     
                     </div>
-                  </form>
+                    <div class="col-3">
+                      <p>Hours</p>
+                      <p id="hours"></p>
+                      
+                    </div>
+                    <div class="col-3">
+                      <p>Minutes</p>
+                      <p id="mins"></p>
+                     
+                    </div>
+                    <div class="col-3">
+                      <p>Seconds</p>
+                      <p id="seconds"></p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- Newsletter end -->
@@ -512,8 +528,6 @@
       </section>
      
      <app-footer></app-footer>
-      <!-- Footer end -->
-
-   
+      <!-- Footer end --> 
     </div>
 
