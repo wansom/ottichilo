@@ -1,6 +1,8 @@
+
 import { Component } from '@angular/core';
 import { DomService } from './services/dom.service';
 import {Router, NavigationEnd} from "@angular/router"
+
 declare let gtag: Function;
 @Component({
   selector: 'app-root',
@@ -22,7 +24,8 @@ export class AppComponent {
  )}
   
   ngOnInit() {
-    this.rightClickDisable.disableRightClick();
+    //this.rightClickDisable.disableRightClick();
+
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, } from '@angular/core';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,8 +16,8 @@ export class HomeComponent implements OnInit,AfterViewInit {
   minutes: any;
   hours: any;
   days: any;
-  year: number = 2023;
-  month: number = 6;
+  year: number = 2022;
+  month: number = 7;
   months = [
     'Jan',
     'Feb',
@@ -31,7 +32,7 @@ export class HomeComponent implements OnInit,AfterViewInit {
     'Nov',
     'Dec',
   ];
-  day: number = 31;
+  day: number = 9;
 
   ngAfterViewInit() {
     this.myTimer();
