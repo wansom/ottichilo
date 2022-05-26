@@ -24,7 +24,7 @@ export class AppComponent {
  )}
   
   ngOnInit() {
-    //this.rightClickDisable.disableRightClick();
+    this.rightClickDisable.disableRightClick();
 
   }
 
