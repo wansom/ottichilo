@@ -13,7 +13,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { BlogComponent } from './blog/blog.component';
 import { CrmService } from './services/crm.service';
 import { BannerComponent } from './banner/banner.component';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -30,7 +31,7 @@ import { GoogleMapsModule } from '@angular/google-maps'
     BlogComponent,
     BannerComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule],
+  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule,HttpClientModule],
   providers: [CrmService],
   bootstrap: [AppComponent],
 })

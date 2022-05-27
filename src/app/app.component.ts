@@ -1,7 +1,8 @@
 
 import { Component } from '@angular/core';
 import { DomService } from './services/dom.service';
-import {Router, NavigationEnd} from "@angular/router"
+import {Router, NavigationEnd} from "@angular/router";
+
 
 declare let gtag: Function;
 @Component({
@@ -24,7 +25,11 @@ export class AppComponent {
  )}
   
   ngOnInit() {
-    this.rightClickDisable.disableRightClick();
+    //this.rightClickDisable.disableRightClick();
+    this.rightClickDisable.fetchData().subscribe((data:any)=>{
+      console.log(data.data)
+    }
+    )
 
   }
 

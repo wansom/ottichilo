@@ -1,3 +1,4 @@
+import { DomService } from './../services/dom.service';
 import { Component, OnInit, AfterViewInit, } from '@angular/core';
 
 
@@ -7,6 +8,7 @@ import { Component, OnInit, AfterViewInit, } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit,AfterViewInit {
+  sessions:any
   currentDate: any;
   targetDate: any;
   cDateMillisecs: any;
@@ -63,9 +65,13 @@ export class HomeComponent implements OnInit,AfterViewInit {
     setInterval(this.myTimer, 1000);
   }
 
-  constructor() { }
+  constructor(private service:DomService) { }
 
   ngOnInit(): void {
+    this.service.fetchData().subscribe((data:any)=>{
+      console.log(data.data.rows[0][0])
+      this.sessions =data.data.rows[0][0]
+    })
   }
 
 }

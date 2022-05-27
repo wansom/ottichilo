@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 
 @Injectable({
@@ -7,11 +8,16 @@ import { Inject, Injectable } from '@angular/core';
 })
 export class DomService {
 
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(@Inject(DOCUMENT) private document: Document,private http: HttpClient) {}
   disableRightClick() {
     this.document.addEventListener('contextmenu', (event) =>
       event.preventDefault()
     );
   }
+  fetchData(){
+    return this.http.get("https://us-central1-scanpal-f74da.cloudfunctions.net/otichillo/auth");
+  }
+
+
   
 }
