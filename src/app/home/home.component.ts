@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit,AfterViewInit {
   }
   myTimer() {
     this.currentDate = new Date();
-    this.targetDate = new Date(2022, 8, 9);
+    this.targetDate = new Date(2022, 7, 9);
     this.cDateMillisecs = this.currentDate.getTime();
     this.tDateMillisecs = this.targetDate.getTime();
     this.difference = this.tDateMillisecs - this.cDateMillisecs;
