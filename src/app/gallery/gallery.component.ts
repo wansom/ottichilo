@@ -21,9 +21,10 @@ export class GalleryComponent implements OnInit {
   public images:any[] =[]
 
   ngOnInit(): void {
-    this.crm.getImages().then((data)=>{
+    this.crm.getImages().then((data:any)=>{
       this.images = data
-      this.healthcare =data
+      
+      this.healthcare =data.sort((a:any,b:any) =>  b.date - a.date);
 
       console.log(data)
     })
