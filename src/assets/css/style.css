@@ -1244,7 +1244,6 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .banner-carousel .banner-carousel-item {
   height: 550px;
   color: #fff;
-  
   background-size: cover;
 }
 
@@ -1256,7 +1255,8 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 @media (max-width: 575px) {
   .banner-carousel .banner-carousel-item {
-    height: 450px;
+    height: 380px;
+    background-size: 100% 100%;
   }
 }
 
