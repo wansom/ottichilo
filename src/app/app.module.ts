@@ -15,6 +15,7 @@ import { CrmService } from './services/crm.service';
 import { BannerComponent } from './banner/banner.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HttpClientModule } from '@angular/common/http';
+import { EpubComponent } from './epub/epub.component';
 
 
 
@@ -30,6 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
     GalleryComponent,
     BlogComponent,
     BannerComponent,
+    EpubComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, GoogleMapsModule,HttpClientModule],
   providers: [CrmService],
