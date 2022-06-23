@@ -5,16 +5,17 @@
 .book-section{
     height: 100vh;
     width: 100%;
-    padding: 40px 0;
+    display: flex;
     text-align: center;
+    background-color: #515558;
 }
 .book-section > .container{
-    height: 80%;
+    height: 92%;
     width: 100%;
     position: relative;
-    
+    margin-top: 30px;
     border-radius: 2%;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     perspective: 1200px;
 }
 .container > .right{
@@ -36,7 +37,7 @@
     position: absolute;
     left:0;
     top:0;
-    background-size: contain;
+    background-size: 96% 100%;
     background-repeat: no-repeat;
     backface-visibility: hidden;
     background-color: white;
@@ -75,6 +76,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
+    height: 40px;
     transition: 0.3s ease-in-out;
 }
 .book-section > button:focus, .book-section > button:active{
