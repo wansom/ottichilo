@@ -69,9 +69,9 @@
     background-color: rgba(0,0,0,0.1);
 }
 .book-section > button{
-    border: 2px solid #ef9f00;
+    border: 2px solid #86CAEA;
     background-color: transparent;
-    color: #ef9f00;
+    color: #86CAEA;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -89,14 +89,14 @@
 }
 .book-section > p > a{
     text-decoration: none;
-    color: #ef9f00;
+    color: #86CAEA;
 }
 .book-section > button:hover{
-    background-color: #ef9f00;
+    background-color: #86CAEA;
     color: #fff;
 }
 .front#cover, .back#back-cover{
-    background-color: #ffcb63;
+    background-color: #86CAEA;
     font-family: calibri;
     text-align: left;
     padding: 0 30px;
