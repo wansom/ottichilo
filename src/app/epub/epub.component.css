@@ -9,10 +9,9 @@
     background-color: #515558;
 }
 .book-section > .container{
-    height: 92%;
+    height: 90%;
     width: 100%;
     position: relative;
-    margin-top: 30px;
     border-radius: 2%;
     margin-bottom: 5px;
     perspective: 1200px;
