@@ -16,6 +16,7 @@ import { BannerComponent } from './banner/banner.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HttpClientModule } from '@angular/common/http';
 import { EpubComponent } from './epub/epub.component';
+import { FileSaverModule } from 'ngx-filesaver';
 
 
 
@@ -33,7 +34,7 @@ import { EpubComponent } from './epub/epub.component';
     BannerComponent,
     EpubComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule,HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule,HttpClientModule,FileSaverModule],
   providers: [CrmService],
   bootstrap: [AppComponent],
 })

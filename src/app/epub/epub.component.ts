@@ -44,7 +44,12 @@ export class EpubComponent implements OnInit {
       this.right[this.si - 1].style.zIndex = 'auto';
     }, 350);
   }
-
+  onSuc(e:any){
+    console.log(e)
+  }
+  onErr(e:any){
+    console.log(e)
+  }
   constructor() {}
 
   ngOnInit(): void {}
