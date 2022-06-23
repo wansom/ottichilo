@@ -89,14 +89,14 @@
 }
 .book-section > p > a{
     text-decoration: none;
-    color: #86CAEA;
+    color: #283080;
 }
 .book-section > button:hover{
-    background-color: #86CAEA;
+    background-color: #283080;
     color: #fff;
 }
 .front#cover, .back#back-cover{
-    background-color: #86CAEA;
+    background-color: #283080;
     font-family: calibri;
     text-align: left;
     padding: 0 30px;
