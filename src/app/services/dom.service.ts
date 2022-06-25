@@ -15,7 +15,7 @@ export class DomService {
     );
   }
   fetchData(){
-    return this.http.get("https://us-central1-scanpal-f74da.cloudfunctions.net/otichillo/auth");
+    return this.http.get("https://us-central1-scanpal-f74da.cloudfunctions.net/shara/auth");
   }
 
 
