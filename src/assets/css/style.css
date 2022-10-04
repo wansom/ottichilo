@@ -1242,9 +1242,9 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 ================================================== */
 /*-- Main slide --*/
 .banner-carousel .banner-carousel-item {
-  height: 590px;
+  height: 620px;
   color: #fff;
-  background-size:contain;
+  background-size:cover;
 }
 
 @media (max-width: 991px) {
